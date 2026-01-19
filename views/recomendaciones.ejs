@@ -1,0 +1,29 @@
+<section class="bg perfil">
+    <div id="container">
+        <div class="content">
+            <h1 class="pag">Recomendaciones</h1>
+            <div class="space"></div>
+            <div class="block">
+                <div class="row center">
+                    <div>
+                        <h2>Hola, <%= user.nombre %></h2>
+                        <p><strong>Sesiones recomendadas según tus preferencias:</strong></p>
+                        <div class="info-usuario">
+                            <ul>
+                                <% if (!sesionesRecomendadas || sesionesRecomendadas.length === 0 ) { %>
+                                    <li>No has marcado intereses: no tenemos sesiones para mostrarte.</li>
+                                <% } else {
+                                    sesionesRecomendadas.forEach ( sesion => { %>
+                                    <li><%= sesion.titulo %> (<%= sesion.fecha %>)</li>
+                                    <% }); %>
+                                <% } %>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>

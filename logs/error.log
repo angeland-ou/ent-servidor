@@ -1,0 +1,22 @@
+[2026-01-03T23:52:36.631Z] - ERROR: Error: Error de prueba al cerrar sesión
+    at /Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/app.js:405:15
+    at Layer.handleRequest (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/layer.js:152:17)
+    at /Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:295:15
+    at processParams (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:582:12)
+    at next (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:291:5)
+    at /Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/app.js:77:5 
+[2026-01-03T23:55:06.080Z] - ERROR: Error: Error de prueba al cerrar sesión
+    at /Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/app.js:405:15
+    at Layer.handleRequest (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/layer.js:152:17)
+    at next (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/route.js:117:3)
+    at handle (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/lib/layer.js:152:17)
+    at /Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:295:15
+    at processParams (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:582:12)
+    at next (/Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/node_modules/router/index.js:291:5)
+    at /Users/angela/Proyectos-Git/Entorno Servidor/entregable-01/app.js:77:5 

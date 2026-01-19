@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "categoria": "Meditación profunda",
+    "titulo": "Meditando con ayuda de un guía espiritual",
+    "fecha": "2026-05-12",
+    "descripcion": "Sesión guiada para alcanzar un estado profundo de calma y autoconocimiento.",
+    "precio": "120.90"
+  },
+  {
+    "id": 2,
+    "categoria": "Meditación profunda",
+    "titulo": "Suprameditación",
+    "fecha": "2026-04-05",
+    "descripcion": "Práctica avanzada de meditación enfocada en la expansión de la conciencia.",
+    "precio": "150.00"
+  },
+  {
+    "id": 3,
+    "categoria": "Oración devota",
+    "titulo": "Oración liberadora del alma",
+    "fecha": "2026-02-25",
+    "descripcion": "Encuentro espiritual orientado a la sanación interior a través de la oración.",
+    "precio": "95.50"
+  },
+  {
+    "id": 4,
+    "categoria": "Oración devota",
+    "titulo": "Oremos juntos para alcanzar la supraconciencia",
+    "fecha": "2026-08-20",
+    "descripcion": "Oración colectiva para elevar la conciencia espiritual compartida.",
+    "precio": "110.20"
+  },
+  {
+    "id": 5,
+    "categoria": "Conexión astrológica",
+    "titulo": "Conecta con las estrellas y halla tu camino",
+    "fecha": "2026-07-16",
+    "descripcion": "Sesión de conexión espiritual basada en la influencia del cosmos.",
+    "precio": "180.00"
+  },
+  {
+    "id": 6,
+    "categoria": "Experiencias cercanas a la muerte",
+    "titulo": "Compartimos nuestras experiencias cercanas a la muerte",
+    "fecha": "2026-03-30",
+    "descripcion": "Espacio de diálogo para compartir y reflexionar sobre experiencias trascendentales.",
+    "precio": "130.75"
+  }
+]

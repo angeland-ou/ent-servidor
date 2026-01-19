@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Lurlin",
+    "useremail": "lurlin@jc.com",
+    "edad": "34",
+    "ciudad": "Ourense",
+    "intereses": [
+      "meditacion",
+      "oracion"
+    ]
+  },
+  {
+    "nombre": "Pepe",
+    "useremail": "pepe@viruela.com",
+    "edad": "85",
+    "ciudad": "ACoruna",
+    "intereses": [
+      "conexion",
+      "ecm"
+    ]
+  }
+]

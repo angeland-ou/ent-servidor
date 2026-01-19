@@ -1,0 +1,37 @@
+<section class="bg perfil">
+    <div id="container">
+        <div class="content">
+            <h1 class="pag">Perfil</h1>
+            <div class="space"></div>
+            <div class="block">
+                <div class="row center">
+                    <div>
+                        <h2>Hola, <%= user.nombre %></h2>
+                        <p>Has iniciado sesión</p>
+                        <div class="info-usuario">
+                            <ul>
+                                <li><strong>Nombre:</strong> <%= user.nombre%></li>
+                                <li><strong>Email:</strong> <%= user.useremail%></li>
+                                <li><strong>Edad:</strong> <%= user.edad%></li>
+                                <li><strong>Ciudad:</strong> <%= user.ciudad%></li>
+                                <li><strong>Intereses:</strong>
+                                    <ul>
+                                        <li>
+                                            <%= intereses.length ? intereses.join(', ') : "No especificados"; %>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="/logout" method="POST">
+                            <button>Salir</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>

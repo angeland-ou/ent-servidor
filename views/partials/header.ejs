@@ -1,0 +1,32 @@
+<header>
+        <nav class="navfixed">
+            <% if (currentPath === "/preferencias" || currentPath === "/perfil" || currentPath === "/recomendaciones") { %>
+                <ul class="single">
+                    <li><a href="/">Volver a inicio</a></li>
+                </ul>
+            <% } else { %>
+                <ul class="color">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/registro">Registro</a></li>
+                    <li><a href="/login">Login</a></li>
+                </ul>
+            <% } %>
+        </nav>
+        
+        <section class="top user">
+            <a class="perfil" href="/perfil"><img src="img/person-circle.svg" alt="Mi Cuenta"></a>
+            <% if(currentPath === "/perfil") { %>
+            <a class="usuario-menu" href="/recomendaciones">Recomendaciones</a>
+            <% } else { %>
+            <a class="usuario-menu" href="/contacto">Contacto</a>
+            <% } %>
+        </section>
+        <section class="top right">
+            <a class="pref" href="/preferencias"><img class="gear" src="img/gear-fill.svg" alt="Modo"></a>
+            <div class="tema">
+                <a href="/tema/dark"><img class="modooscuro" src="img/circle-fill.svg" alt="Modo oscuro"></a>
+                <a href="/tema/light"><img class="modoclaro" src="img/circle-fill.svg" alt="Modo claro"></a>
+            </div>
+            
+        </section>
+    </header>

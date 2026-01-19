@@ -1,0 +1,94 @@
+<section class="bg registro">
+    <div id="container">
+        <div class="content">
+            <h1 class="pag">Registro</h1>
+            
+            <% if (typeof errores !== "undefined" && errores.length) { %>
+                <div class="error-message">
+                    <p>Por favor corrige los errores:</p>
+                    <ul>
+                        <% errores.forEach(e=> { %>
+                            <li>
+                                <%= e %>
+                            </li>
+                        <% })%>
+                    </ul>
+                </div>
+            <% } %>
+
+
+                        <form class="recuadro" action="/registro" method="POST">
+
+                            <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" value="<%= nombre || '' %>" required />
+                            <p></p>
+
+                            <label for="useremail">Email:</label>
+                                <input type="email" name="useremail" value="<%= useremail || '' %>" required />
+                            <p></p>
+
+                            <label for="edad">Edad:</label>
+                                <input type="number" name="edad" min="0" value="<%= edad || '' %>" />
+                            <p></p>
+
+                            <label for="ciudad">Ciudad:</label>
+                            <div class="content-select">
+                                <select name="ciudad">
+                                    <option value="">-- Selecciona --</option>
+                                    <option value="ACoruna" <%=ciudad==='ACoruna' ? 'selected' : '' %>>A Coruña
+                                    </option>
+                                    <option value="Lugo" <%=ciudad==='Lugo' ? 'selected' : '' %>
+                                        >Lugo</option>
+                                    <option value="Ourense" <%=ciudad==='Ourense' ? 'selected' : '' %>
+                                        >Ourense</option>
+                                    <option value="Pontevedra" <%=ciudad==='Pontevedra' ? 'selected' : '' %>
+                                        >Pontevedra</option>
+                                </select>
+                                <i></i>
+                            </div>
+                                
+                            
+                            <p></p>
+
+                            <fieldset>
+                                <legend>Intereses</legend>
+                                <label class="content-input">
+                                    <input type="checkbox" name="intereses" value="meditacion" <%=(intereses ||
+                                        []).includes('meditacion') ? 'checked' : '' %>
+                                    />
+                                    Meditación profunda
+                                    <i></i>
+                                </label>
+
+                                <label class="content-input">
+                                    <input type="checkbox" name="intereses" value="oracion" <%=(intereses ||
+                                        []).includes('oracion') ? 'checked' : '' %>
+                                    />
+                                    Oración devota
+                                    <i></i>
+                                </label>
+
+                                <label class="content-input">
+                                    <input type="checkbox" name="intereses" value="conexion" <%=(intereses ||
+                                        []).includes('conexion') ? 'checked' : '' %>
+                                    />
+                                    Conexión Astrológica
+                                    <i></i>
+                                </label>
+
+                                <label class="content-input">
+                                    <input type="checkbox" name="intereses" value="ecm" <%=(intereses ||
+                                        []).includes('ecm') ? 'checked' : '' %>
+                                    />
+                                    Experiencias cercanas a la muerte
+                                    <i></i>
+                                </label>
+
+                            </fieldset>
+                            <p></p>
+
+                            <button type="submit">Registrarme</button>
+                        </form>
+                </div>
+        </div>
+</section>
