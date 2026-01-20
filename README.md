@@ -45,15 +45,18 @@ Control de versiones y alojamiento del repositorio.
 
 ## Rutas
 
-| Ruta                 | Autenticación  | Propósito                                                     |
-|----------------------|----------------|----------------------------------------------------------------|
-| /                   | noAuth         | Formulario de login                                           |
-| /registro            | noAuth         | Formulario de registro                                        |
-| /perfil              | requiereAuth  | Perfil de usuario con intereses mapeados                      |
-| /recomendaciones     | requiereAuth  | Recomendaciones de sesiones según los intereses               |
-| /contacto            | -             | Información de contacto                                       |
-| /preferencias        | -             | Página de preferencias de tema                                |
-| /tema/:modo          | -             | Establece la cookie de tema                                   |
+| Tipo                 | Ruta                 | Auth          | Propósito                                                     |
+|----------------------|----------------------|---------------|----------------------------------------------------------------|
+| GET                  | /                    | noAuth        | Formulario de login                                           |
+| GET                  | /registro            | noAuth        | Formulario de registro                                        |
+| GET                  | /perfil              | requiereAuth  | Perfil de usuario con intereses mapeados                      |
+| GET                  | /recomendaciones     | requiereAuth  | Recomendaciones de sesiones según los intereses               |
+| GET                  | /contacto            | -             | Información de contacto                                       |
+| GET                  | /preferencias        | -             | Página de preferencias de tema                                |
+| GET                  | /tema/:modo          | -             | Establece la cookie de tema                                   |
+| POST                 | /registro            | -             | Proceso de registro, validación y guardado en JSON            |
+| POST                 | /login               | -             | Autenticar usuario y crear sesión                             |
+| POST                 | /logout              | -             | Destruír sesión y redireccionar al login                      |
 
 
 
